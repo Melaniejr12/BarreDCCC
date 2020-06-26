@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Mel's Barre </title>
+        <link rel="stylesheet" href="barre.css">
+        
+    </head>
+    <body>
+    <div id="wrapper">
+    <header>
+        <h1> Mel's Barre </h1>
+    </header>
+<h2>We will be in touch with you shortly!</h2>
+
+<h3>The information you entered is listed below:</h3>
+
+Welcome <?php echo $_POST["myFName"]; ?><br>
+Your last name in our system is <?php echo $_POST["myLName"]; ?><br>
+Your email address in our system is <?php echo $_POST["myEmail"]; ?><br>
+Your phone number in our system is <?php echo $_POST["myPhone"]; ?><br>
+Your requested start date is <?php echo $_POST["startdate"]; ?><br>
+The number if classes a week you requested is <?php echo $_POST["classes"]; ?><br>
+Your message <?php echo $_POST["myComments"]; ?><br>
+
+</div>
+</body>
+</html>

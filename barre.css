@@ -1,0 +1,145 @@
+header,main,nav,footer,figure,figcaption,aside,section,article{display:block;}
+body {background-color:#C93CF2;
+        color:#FA59BD;
+        font-family:"Comic Sans MS";
+      background-image: linear-gradient(to bottom,#F796DF, #F72EC6, #C93CF2);
+      background-repeat:no-repeat;}
+#wrapper{background-color:#F796DF;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        min-width: 960px;
+        max-width: 2048px;
+        box-shadow:4px 4px 4px #040404;}
+header {background-color:#F72EC6;
+        color:#040404;
+        text-align: center;
+        height: 60px;
+        padding-top: 15px;}
+h1 {font-family:"Comic Sans MS","Times New Roman",serif;
+    margin-bottom:0;
+    margin-top: 0;}
+nav {float:left;
+     width:160px;
+    font-weight:bold;
+     padding: 20px;}
+nav ul{margin:0px;
+       padding:0px;
+    font-size: 1.2em;
+    list-style-type:none;}
+nav a{text-decoration:none;}
+nav a:link{ color:#040404;}
+nav a:visited{color:#040404;}
+nav a:hover{color:#FFFFFF;}
+main{margin-left:190px;
+    padding: 1px 20px 1px 30px;
+    display: block;
+    background-color: #FFFFFF;}
+h2{font-family:"Comic Sans MS","Times New Roman",serif;
+    color:#040404;
+    text-shadow: 1px 1px 1px #CCCCCC;}
+.content main { display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: 1fr 1fr 1fr;}
+h2 { grid-row: 1 / 2; grid-column: 1 / 5; }
+section { grid-row: 2 / 3; grid-column: auto; text-align: center; }
+footer { grid-row: auto; grid-column: 1 / 5; }
+
+h3{font-family:"Comic Sans MS","Times New Roman",serif;
+   color: #F72EC6}
+dt {color:#000033;}
+.business { color:#F72EC6;
+          font-weight:bold;}
+footer{background-color:#040404;
+       color: FFFFFF;
+       margin-left:190px;
+       font-size: 75%;
+       font-style:italic;
+       font-family:"Comic Sans MS","Times New Roman",serif;
+       text-align: center;
+       padding: 12px;}
+#contact{font-size:90%;}
+#indeximage{height: 350px;
+          background: #040404;
+          background-image:url(barregroup.jpg);
+          background-repeat: no-repeat;
+          background-size:40% 100%;
+          background-position: center;
+          margin-left: 190px;}
+#aboutimage{height: 350px;
+          background: #040404;
+          background-image: url(barrestretching.jpg);
+          background-repeat: no-repeat;
+          background-size: 40% 100%;
+          background-position: center;
+          margin-left: 190px;}
+#funimage{height:350px;
+           background: #040404;
+           background-image: url(positiveopportunity.jpg);
+           background-repeat: no-repeat;
+           background-size: 40% 100%;
+           background-position: center;
+           margin-left: 190px;}
+table{ border: 1px #040404 solid;
+        width:80%;
+        border-spacing:0;}
+td, th {padding: 5px;
+        border: 1px #040404 solid;}
+td{text-align: center;}
+.text{text-align: left;}
+th {background-color:#F8E6F9;}
+label{float:left;
+      display:block;
+      width: 120px;
+      padding-right:10px;
+      text-align:right;}
+input{display:block;
+      margin-bottom:20px;}
+textarea{display:block;
+         margin-bottom:20px;}
+input[type="submit"]{margin-left:130px;}
+#mobile{display:none;}
+#desktop{display:inline;}
+@media only screen and (max-width: 64em){
+    body{margin:0;
+         background-color:#FFFFFF;}
+    #wrapper{min-width:0;
+             width:auto;
+             box-shadow:none;}
+    main{margin-left:0;}
+    nav{float:none;
+        width:auto;
+        text-align:center;
+        padding:.5em;}
+    nav li{display:inline;
+           padding: .25em .75em .25em .75em;}
+    section { padding-left: 2em;
+             padding-right: 2em;
+}
+    #indeximage{margin-left:0;
+              height:200px;}
+    #aboutimage{margin-left:0;
+              height:200px;}
+    #funimage{margin:0;
+               height:200px;}
+    footer{margin-left:0;}
+}
+@media only screen and (max-width:37.5em){
+    header{padding-top:1em;}
+    main{padding:0.1em 1em 0.1em 1em;
+         font-size:90%;}
+    h1{font-size:1.5em;}
+    nav{padding:0;}
+    nav li{display:block;
+           margin:0;
+           border-bottom: 2px solid #040404;}
+    nav a:link{display:block;}
+    #indeximage{background-image:none;
+              height:0;}
+    #aboutimage{background-image:none;
+              height:0;}
+    #funimage{background-image:none;
+               height:0;}
+    #mobile{display:inline;}
+    #desktop{display:none;}
+}
